@@ -1,0 +1,46 @@
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./TH_slideshow.css">
+</head>
+<body>
+<div class="cover-slider" id="TH-slider">
+    <div class="slider">
+        <div class="slide" slide-pc="slides/pc/slide01.jpg" slide-sp="slides/sp/slide01.jpg">
+            <span>TEXT</span>
+        </div>
+        <div class="slide" slide-pc="slides/pc/slide02.jpg" slide-sp="slides/sp/slide02.jpg">
+            <span>TEXT</span>
+        </div>
+        <div class="slide" slide-pc="slides/pc/slide03.jpg" slide-sp="slides/sp/slide03.jpg">
+            <span>TEXT</span>
+        </div>
+        <div class="slide" slide-pc="slides/pc/slide04.jpg" slide-sp="slides/sp/slide04.jpg">
+            <span>TEXT</span>
+        </div>
+        <div class="slide" slide-pc="slides/pc/1200px-Limes.jpg" slide-sp="slides/sp/1200px-Limes.jpg">
+            <span>TEXT</span>
+        </div>
+    </div>
+    <a class="arrow-left" href="javascript:void(0);"></a>
+    <a class="arrow-right" href="javascript:void(0);"></a>
+    <div class="dots-wrapper"></div>
+</div>
+
+<script src="./TH_slideshow.js"></script>
+<script>
+    /*run slide*/
+    let settings = {
+        speed: 500,
+        easing: 'ease',
+        delay: 3500,
+        autoplay: false,
+        isDots: true,
+        isArrows: true,
+    };
+
+    const slider = new TH_Slider(settings);
+</script>
+</body>
+</html>
+
